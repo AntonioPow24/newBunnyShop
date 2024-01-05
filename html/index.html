@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BunnyShop</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+
+
+      
+      <header class="header">
+        <div class="header-content">
+          <img src="/imagenes/BSLogoHeader.png" alt="" />
+
+          <div class="buscar">
+            <input type="search" placeholder="Buscar en BunnyShop" />
+            <button class="search-btn" type="submit">
+              <i class="bx bx-search"></i>
+            </button>
+          </div>
+
+          <div class="acceso" id="acceso">
+            <i class="bx bx-user-circle" ></i>
+            <i class="bx bx-cart  cart-icon" ></i>
+            <div class="cart" id="cart">
+              <div class="cart-list" id="cart-list">
+
+                <!-- <div class="item" data-id="1">
+                  <img src="/imagenes/Productos/Novedades/Ramune Pokemon.jpg" alt="">
+                  <span class="title">Ramune edición Pokémon 200ml</span>
+                  <span>S/. 11.87</span>
+                  <span>1</span>
+                  <span><i class='bx bx-x'></i></span>
+                </div>
+
+                <div class="item" data-id="2">
+                  <img src="/imagenes/Productos/Novedades/Ramune Pokemon.jpg" alt="">
+                  <span class="title">Ramune edición Pokémon 200ml</span>
+                  <span>S/. 11.87</span>
+                  <span>1</span>
+                  <span><i class='bx bx-x'></i></span>
+                </div> -->
+              </div>
+
+              <a class="clean-cart" id="clean-cart" href="#">Vaciar carrito</a>
+            </div>
+            <p class="total-paid">S/. 00.00</p>
+          </div>
+        </div>
+
+        <div class="categorias">
+          <div class="categorias-content">
+            <div class="categoriax">
+              <a href="#">
+                <div class="imagen-categoria">
+                  <img src="/imagenes/categorias/bebidas.svg" alt="" />
+                </div>
+                <p>Bebidas</p>
+              </a>
+            </div>
+            <div class="categoriax">
+              <a href="#">
+                <div class="imagen-categoria">
+                  <img src="/imagenes/categorias/dulces.svg" alt="" />
+                </div>
+                <p>Dulces</p>
+              </a>
+            </div>
+            <div class="categoriax">
+              <a href="#">
+                <div class="imagen-categoria">
+                  <img src="/imagenes/categorias/Mochis.svg" alt="" />
+                </div>
+                <p>Mochis</p>
+              </a>
+            </div>
+            <div class="categoriax">
+              <a href="#">
+                <div class="imagen-categoria">
+                  <img src="/imagenes/categorias/Ramen.svg" alt="" />
+                </div>
+                <p>Ramen Japones</p>
+              </a>
+            </div>
+            <div class="categoriax">
+              <a href="#">
+                <div class="imagen-categoria">
+                  <img src="/imagenes/categorias/Snacks.svg" alt="" />
+                </div>
+                <p>Snacks</p>
+              </a>
+            </div>
+            <div class="categoriax">
+              <a href="#">
+                <div class="imagen-categoria">
+                  <img src="/imagenes/categorias/Salsas.svg" alt="" />
+                </div>
+                <p>Salsas y Especias</p>
+              </a>
+            </div>
+            <div class="categoriax">
+              <a href="#">
+                <div class="imagen-categoria">
+                  <img src="/imagenes/categorias/CajasSorpresas.svg" alt="" />
+                </div>
+                <p>Cajas Sorpresa</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="presentacion">
+
+
+        <div class="sidebar">
+          <div class="item">
+            <a href="#">
+              <div class="item-categoria">
+                <img src="/imagenes/categorias/new.svg" alt="" />
+              </div>
+              <p>Novedades</p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="item-categoria">
+                <img src="/imagenes/categorias/bebidas.svg" alt="" />
+              </div>
+              <p>Bebidas</p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="item-categoria">
+                <img src="/imagenes/categorias/dulces.svg" alt="" />
+              </div>
+              <p>Dulces</p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="item-categoria">
+                <img src="/imagenes/categorias/Mochis.svg" alt="" />
+              </div>
+              <p>Mochis</p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="item-categoria">
+                <img src="/imagenes/categorias/Ramen.svg" alt="" />
+              </div>
+              <p>Ramen Japonés</p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="item-categoria">
+                <img src="/imagenes/categorias/Snacks.svg" alt="" />
+              </div>
+              <p>Snacks</p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="item-categoria">
+                <img src="/imagenes/categorias/Salsas.svg" alt="" />
+              </div>
+              <p>Salsas y Especias</p>
+            </a>
+          </div>
+          <div class="item">
+            <a href="#">
+              <div class="item-categoria">
+                <img src="/imagenes/categorias/CajasSorpresas.svg" alt="" />
+              </div>
+              <p>Cajas Sorpresa</p>
+            </a>
+          </div>
+        </div>
+
+
+
+        <div class="slider">
+          <ul>
+            <li><img src="/imagenes/Slider/slider1.jpg" alt="" /></li>
+            <li><img src="/imagenes/Slider/slider2.jpg" alt="" /></li>
+            <li><img src="/imagenes/Slider/slider3.jpg" alt="" /></li>
+            <li><img src="/imagenes/Slider/slider4.jpg" alt="" /></li>
+            <li><img src="/imagenes/Slider/slider5.jpg" alt="" /></li>
+            <li><img src="/imagenes/Slider/slider6.jpg" alt="" /></li>
+            <li><img src="/imagenes/Slider/slider7.jpg" alt="" /></li>
+            <li><img src="/imagenes/Slider/slider8.jpg" alt="" /></li>
+          </ul>
+        </div>
+
+
+        <div class="videos-header">
+          <video autoplay muted loop>
+            <source src="/videos/publicidad1.mp4" />
+          </video>
+          <video autoplay muted loop>
+            <source src="/videos/publicidad2.mp4" />
+          </video>
+          <video autoplay muted loop>
+            <source src="/videos/publicidad3.mp4" />
+          </video>
+        </div>
+
+
+
+        <div class="anime-logos">
+          <div class="logos-container">
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo1.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo2.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo3.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo4.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo5.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo6.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo7.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo8.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo9.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo10.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo1.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo2.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo3.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo4.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo5.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo6.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo7.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo8.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo9.png" />
+            </div>
+            <div class="slide">
+              <img src="/imagenes/LogosAnime/logo10.png" />
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+
+
+
+
+      <main class="main">
+
+
+        <div class="titulo-main">
+          <h2>Novedades de BunnyShop</h2>
+          <div class="icono">
+            <img src="/imagenes/categorias/new.svg" alt="" />
+          </div>
+        </div>
+
+
+
+        <section class="productos">
+
+
+
+
+
+          <div class="productox" data-id="1">
+            <a href="#" class="imagen-producto">
+                <img
+              src="/imagenes/Productos/Novedades/Ramune Pokemon.jpg"
+              alt=""
+            />
+            </a>
+            
+            <h4>Ramune Pokemon</h4>
+            <span>S/. 10.00</span>
+            <div class="cantidad">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+            <a href="#" class="add-cart"><i class="bx bx-cart"></i>Añadir al carrito</a>
+          </div>
+
+
+          <div class="productox" data-id="2">
+            <a href="#" class="imagen-producto">
+                <img
+              src="/imagenes/Productos/Novedades/Ramune Sumikko.jpg"
+              alt=""
+            />
+            </a>
+            
+            <h4>Ramune Sumikko</h4>
+            <span>S/. 10.50</span>
+            <div class="cantidad">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+            <a href="#" class="add-cart"><i class="bx bx-cart"></i>Añadir al carrito</a>
+          </div>
+
+
+          <div class="productox" data-id="3">
+            <div class="imagen-producto">
+                <img
+              src="/imagenes/Productos/Novedades/Qdol Pikachu.jpg"
+              alt=""
+            />
+            </div>
+            
+            <h4>Ramune edición Pikachu 200ml</h4>
+            <span>S/. 12.00</span>
+            <div class="cantidad">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+            <a href="#" class="add-cart"><i class="bx bx-cart"></i>Añadir al carrito</a>
+          </div>
+
+
+          <div class="productox" data-id="4">
+            <div class="imagen-producto">
+                <img
+              src="/imagenes/Productos/Novedades/Qdol Eevee.jpg"
+              alt=""
+            />
+            </div>
+            
+            <h4>Ramune edición Eevee 200ml</h4>
+            <span>S/. 11.50</span>
+            <div class="cantidad">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+            <a href="#" class="add-cart"><i class="bx bx-cart"></i>Añadir al carrito</a>
+          </div>
+
+
+          <div class="productox" data-id="5">
+            <div class="imagen-producto">
+                <img
+              src="/imagenes/Productos/Novedades/Qdol Feennekin.jpg"
+              alt=""
+            />
+            </div>
+            
+            <h4>Qdol Feennekin</h4>
+            <span>S/. 7.87</span>
+            <div class="cantidad">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+            <a href="#" class="add-cart"><i class="bx bx-cart"></i>Añadir al carrito</a>
+          </div>
+
+
+          <div class="productox" data-id="6">
+            <div class="imagen-producto">
+                <img
+              src="/imagenes/Productos/Novedades/Qdol Gengar.jpg"
+              alt=""
+            />
+            </div>
+            
+            <h4>Qdol Gengar</h4>
+            <span>S/. 13.00</span>
+            <div class="cantidad">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+            <a href="#" class="add-cart"><i class="bx bx-cart"></i>Añadir al carrito</a>
+          </div>
+
+
+          <div class="productox" data-id="7">
+            <div class="imagen-producto">
+                <img
+              src="/imagenes/Productos/Novedades/Qdol Limon Pikachu.jpg"
+              alt=""
+            />
+            </div>
+            
+            <h4>Qdol Limon Pikachu</h4>
+            <span>S/. 13.00</span>
+            <div class="cantidad">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+            <a href="#" class="add-cart"><i class="bx bx-cart"></i>Añadir al carrito</a>
+          </div>
+
+
+          <div class="productox" data-id="8">
+            <div class="imagen-producto">
+                <img
+              src="/imagenes/Productos/Novedades/Qdol Psyduck.webp"
+              alt=""
+            />
+            </div>
+            
+            <h4>Qdol Psyduck 200ml</h4>
+            <span>S/. 12.77</span>
+            <div class="cantidad">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+            <a href="#" class="add-cart"><i class="bx bx-cart"></i>Añadir al carrito</a>
+          </div>
+
+
+          <div class="productox" data-id="9">
+            <div class="imagen-producto">
+                <img
+              src="/imagenes/Productos/Novedades/Gominolas Kirby.jpg"
+              alt=""
+            />
+            </div>
+            
+            <h4>Gominolas Kirby</h4>
+            <span>S/. 7.00</span>
+            <div class="cantidad">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+            <a href="#" class="add-cart"><i class="bx bx-cart"></i>Añadir al carrito</a>
+          </div>
+
+
+          <div class="productox" data-id="10">
+            <div class="imagen-producto">
+                <img
+              src="/imagenes/Productos/Novedades/Gominolas UHA kororo.jpg"
+              alt=""
+            />
+            </div>
+            
+            <h4>Gominolas UHA kororo</h4>
+            <span>S/. 6.55</span>
+            <div class="cantidad">
+              <button>-</button>
+              <p>1</p>
+              <button>+</button>
+            </div>
+            <a href="#" class="add-cart"><i class="bx bx-cart"></i>Añadir al carrito</a>
+          </div>
+        </section>
+
+
+      </main>
+
+
+
+
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="content-1">
+            <div class="imagen-content">
+              <img  src="/imagenes/BSLogoHeader.png" alt=""/>
+            </div>
+            <p>Tienda online de productos japoneses, coreanos y otros paises. Dulces, Bebidas, Mochis, Ramen , Snacks , Salsas, Cajas Sorpresa</p>
+          </div>
+          <div class="content-2">
+            <h3>Categorías</h3>
+            <ul>
+              <li><a href="#"><span>Bebidas</span></a></li>
+              <li><a href="#"><span>Dulces</span></a></li>
+              <li><a href="#"><span>Mochis</span></a></li>
+              <li><a href="#"><span>Bebidas</span></a></li>
+              <li><a href="#"><span>Ramen Japonés</span></a></li>
+              <li><a href="#"><span>Snacks</span></a></li>
+              <li><a href="#"><span>Salsas y Especias</span></a></li>
+              <li><a href="#"><span>Cajas Sorpresa</span></a></li>
+              <li><a href="#"><span>Animes</span></a></li>
+            </ul>
+          </div>
+          <div class="content-2">
+            <h3>Políticas</h3>
+            <ul>
+              <li><a href="#"><span>Política de Privacidad</span></a></li>
+              <li><a href="#"><span>Política de cookies</span></a></li>
+              <li><a href="#"><span>Política de Devoluciones y Reembolsos</span></a></li>
+              <li><a href="#"><span>Condiciones de venta</span></a></li>
+              <li><a href="#"><span>Preguntas Frecuentes</span></a></li>
+            </ul>
+          </div>
+          <div class="content-2">
+            <h3>Contacto | Redes Sociales</h3>
+            <ul>
+              <li><a href="#"><span><i class='bx bx-group'></i>Nosotros</span> </a></li>
+              <li><a href="#"> <span><i class='bx bx-headphone'></i>Contacto</span></a></li>
+              <li><a href="#"> <span><i class='bx bx-phone'></i>928517790</span></a></li>
+              <li><a href="#"> <span><i class='bx bx-envelope'></i>Atención al cliente</span></a></li>
+              <li><a href="#"> <span>
+                <i class='bx bxl-facebook'></i>Facebook
+              </span></a></li>
+              <li><a href="#"> <span><i class='bx bxl-instagram'></i>Instagram</span></a></li>
+              <li><a href="#"> <span>
+                <i class='bx bxl-twitter'></i>Twitter
+              </span></a></li>
+              <li><a href="#">
+                <span>
+                  <i class='bx bxl-tiktok'></i>Tik Tok
+                </span></a></li>
+              
+            </ul>
+          </div>
+          <div class="content-2">
+            <h3>Centro de Ayuda</h3>
+            <ul>
+              <li>Tiendas Automáticas Perú</li>
+              <li>Market 24h S.L.</li>
+              <li>Av. Pardo 1157</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-link">
+          <p>Copyright © 2023. Todo los derechos reservados.</p>
+          <div class="pagos">
+            <img src="/imagenes/Pagos/pagos.jpg" alt="">
+          </div>
+        </div>
+      </footer>
+    </div>
+
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>
