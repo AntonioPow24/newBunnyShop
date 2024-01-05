@@ -107,7 +107,7 @@ function showCart (){
         newItem.innerHTML=`
         <img src="${img}" alt="">
         <span class="title">${title}</span>
-        <span>S/. ${price}</span>
+        <span>${price}</span>
         <span>${quantity}</span>
         <span><i class='bx bx-x remove-item'></i></span>
         `
