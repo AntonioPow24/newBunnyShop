@@ -364,7 +364,7 @@ width: 100%;
 .videos-header{
     padding-right: 15px;
     width: 100%;
-    height: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -382,6 +382,7 @@ width: 100%;
 /* Logos */
 
 .anime-logos{
+
     grid-column: 1/4;
     padding: 40px 15px 40px 0;
     overflow: hidden;
@@ -389,18 +390,19 @@ width: 100%;
     
 }
 .anime-logos .logos-container{
-    width: calc(250px * 20);
+    overflow: hidden;
+    width: calc(250px *20);
     height: 120px;
     display: flex;
-    
     padding: 10px 15px;
     gap: 55px;
-    animation:  scroll 20s linear infinite;
+    animation:  scroll linear infinite;
     -webkit-animation:  scroll 20s linear infinite ;
 }
 
 .logos-container .slide{
     width: 250px;
+
     
 }
 .anime-logos .slide img{
@@ -432,8 +434,8 @@ width: 100%;
 
 .main{
     grid-area: main;
-    
-    margin: 0 20px;
+    width: 100%;
+    padding: 0 20px;
 }
 
 
@@ -444,7 +446,7 @@ width: 100%;
     padding: 10px 0;
     
     background: var(--turquesaHover);
-    
+    position: relative;
     border-radius: 25px;
     
 }
@@ -457,22 +459,22 @@ width: 100%;
 
 .titulo-main .icono{
     position: absolute;
+    top: 10px;
+    left: 10px;
+
 }
 .titulo-main .icono img{
-   
-   position: relative;
     width: 70px;
-    bottom: 67px;
-    left: 20PX;
+
 }
 
 
 
 /* Productos GRID */
 .productos{
-    margin: 20px 0;
+    padding: 20px 0;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(auto-fill,minmax(320px,1fr));
     gap: 30px;
 }
 
@@ -769,8 +771,160 @@ display: flex;
 
 
 
-
 .main-producto .pro-producto{
     background: rgb(0, 0, 255);
     width: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1780px){
+    .sidebar{
+        display: none;
+    }
+    .presentacion {
+
+        grid-area: presentacion;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 20px;
+    }
+}
+
+
+@media (max-width:1591px){
+    .categorias-content{
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .buscar {
+        width: 30%;
+    }
+    .presentacion {
+        width: 100%;
+        display: flex;
+       flex-direction: column;
+    }
+
+
+
+    .anime-logos {
+        display: none;
+    }
+
+    .videos-header{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .videos-header video{
+        width:33%;
+    }
+
+    .header-content{
+        gap: 0;
+        justify-content: space-around;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-content .content-1 p{
+        display: none;
+    }
+    .footer-content >div{
+        min-height: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content >div ul{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}
+
+
+
+@media (max-width:1420px){
+    .categorias-content{
+        overflow: hidden;
+    }
+    .header .header-content{
+        
+       
+    }
+    .header .header-content .buscar{
+        
+       width: 300px;
+    }
+
+    .header .categorias-content{
+        width: 100%;
+        justify-content: center;
+    }
+    .titulo-main h2 {
+        font-size: 1em;
+    }
+
+    .footer{
+        padding:0 10% ;
+    }
+    .footer-content .content-2 ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:800px){
+    .header .categorias-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header  .header-content img{
+        width: 200px;
+    }
+
+    .header .header-content .buscar{
+        display: none;
+    }
+    .categorias-content .categoriax{
+        width: 200px;
+        display: flex;
+        justify-content: left;
+    }
+
+    .categorias-content .categoriax a{ 
+        gap: 2rem;
+    }
+
+    .videos-header {
+        flex-direction: column;
+    }
+
+    .videos-header video{
+        width: 100%;
+    }
 }
