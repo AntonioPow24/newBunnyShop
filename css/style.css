@@ -51,11 +51,16 @@
 
 /* Header content */
 .header{
-    background: rgb(220, 195, 195);
+    
     grid-area: header;
+
 }
 
 .header-content{
+    background: rgb(220, 195, 195);
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
     display: flex;
     padding: 10px 20px;
     align-items: center;
@@ -138,9 +143,10 @@
     right: 0;
     background-color: #f6f5f5;
     z-index: 1000;
-
-    min-width: 450px;
-    min-height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 450px;
+    min-height: 100px;
 }
 
 .cart .cart-list{
@@ -160,22 +166,21 @@
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-   width: 70px;
+
 }
 .item span.title{
     font-size: 16px;
-    width: 120px;
+    width: 115px;
 
 }
 .cart img{
-    width: 80px;
+    max-width: 80px;
 }
 
 .cart .clean-cart{
     margin-top: 1rem;
     background:var(--rosa);
     border-top: 1px solid var(--negropuro);
-    border-bottom:1px solid var(--negropuro) ;
     color: var(--negro);
     display: flex;
     height: 40px;
@@ -191,7 +196,7 @@
 /* Header Categorias */
 .categorias{
     background: var(--negro);
-    
+    margin-top: 88px;
 }
 .categorias-content{
     width: 1300px;
@@ -885,6 +890,12 @@ display: flex;
         font-size: 1em;
     }
 
+    .acceso .cart.active{
+        width: 380px;
+    }
+    .cart .item img{
+        max-width: 50px;
+    }
     .footer{
         padding:0 10% ;
     }
@@ -899,6 +910,7 @@ display: flex;
     .header .categorias-content{
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
     .header  .header-content img{
         width: 200px;
@@ -908,11 +920,17 @@ display: flex;
         display: none;
     }
     .categorias-content .categoriax{
-        width: 200px;
+        width: 100%;
         display: flex;
         justify-content: left;
+        padding-left: 35%;
     }
 
+    .categoriax:hover{
+        border-radius: 12px;
+        background: var(--hovercategoria);
+        
+        }
     .categorias-content .categoriax a{ 
         gap: 2rem;
     }

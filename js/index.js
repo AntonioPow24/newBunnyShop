@@ -15,7 +15,11 @@ cartIcon.addEventListener('click',()=>{
     cart.classList.toggle('active')
 })
 
-
+// Mostra cursos del localStorage
+document.addEventListener('DOMContentLoaded',()=>{
+    arrayCart = JSON.parse(localStorage.getItem('carrito')) || []
+    showCart()
+})
 
 // Agregar producto al carrito
 
@@ -70,6 +74,7 @@ productsContainer.addEventListener('click',(e)=>{
             cartList.removeChild(cartList.firstChild)
         }
     })
+
 // Eliminar un elemento del carrito
 cart.addEventListener('click',(e)=>{
     e.preventDefault()
@@ -117,4 +122,13 @@ function showCart (){
         cartList.appendChild(newItem)
 
     })
+
+        // AGREGAR LA LISTA CART AL STORAGE
+
+        storageSincronized()
+}
+
+
+function storageSincronized(){
+    localStorage.setItem('carrito',JSON.stringify(arrayCart))
 }
